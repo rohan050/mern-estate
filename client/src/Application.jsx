@@ -6,11 +6,13 @@ import Profile from './page/Profile'
 import About from './page/About'
 import SignUp from './page/SignUp'
 import SignIn from './page/SignIn'
+import Header from './components/Header';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 
       <BrowserRouter>
+      <Header/>
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/sign-in' element={<SignIn/>}/>
